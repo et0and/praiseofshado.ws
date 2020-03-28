@@ -241,7 +241,7 @@ a:hover {
 	width: auto;
 	text-align: center;
 	object-fit: contain;
-	background-color: #D7D7CC;
+	background-color: #FFFFFF;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
@@ -250,7 +250,7 @@ a:hover {
 }
 .large.image-block {
 	border: none;
-	border: 1px solid #000;
+	border: 0.5px solid #000;
 	margin-top: 50px;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -295,7 +295,7 @@ a:hover {
 	position: fixed;
 	left: 0;
 	top: 0;
-	background-color: #D7D7CC;
+	background-color: #FFFFFF;
 	opacity: 0;
 	pointer-events: none;
 }
