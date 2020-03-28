@@ -4,7 +4,7 @@ $('.submit, .submit-container').on('click', function(){
 
 
 var channel = 'https://api.are.na/v2/channels/shadows-82qonzlwqzg';
-var writing = 'https://api.are.na/v2/channels/covid-19-archive-writing';
+var writing = 'https://api.are.na/v2/channels/shadows-writing';
 
 //Clear Cache
 $.ajax({
