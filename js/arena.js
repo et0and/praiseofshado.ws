@@ -3,7 +3,7 @@ $('.submit, .submit-container').on('click', function(){
 });
 
 
-var channel = 'https://api.are.na/v2/channels/shadows-82qonzlwqzg';
+var channel = 'https://api.are.na/v2/channels/poetics-of-space-gvdouhcpye0';
 var writing = 'https://api.are.na/v2/channels/shadows-writing';
 
 //Clear Cache
