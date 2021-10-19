@@ -43,6 +43,7 @@ $(document).on('click', '.loadmorePosts', function(){
 getImages();
 getWriting();
 
+/*
 function getTitle() {
   $.ajax({
     url: channel,
@@ -66,8 +67,8 @@ function getTitle() {
       console.log(errorThrown);
     },
   });
-}
-function getDescription() {
+} */
+/*function getDescription() {
   $.ajax({
     url: channel,
     type: 'GET',
@@ -89,7 +90,7 @@ function getDescription() {
       console.log(textStatus);
       console.log(errorThrown);
     },
-  });
+  }); */
 }
 function getImages() {
   $.ajax({
