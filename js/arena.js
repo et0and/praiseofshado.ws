@@ -38,8 +38,8 @@ $(document).on('click', '.loadmorePosts', function(){
   }
 });
 
-getTitle();
-getDescription();
+//getTitle();
+//getDescription();
 getImages();
 getWriting();
 
