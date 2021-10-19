@@ -113,7 +113,7 @@ function getImages() {
 
         $('.image-gallery').append('<div class="image-block" id="'+contentID+'"></div>')
 
-        $('#'+contentID).prepend('<div class="image-content"> <p class="image-tag acumin-body">â€¢ '+imageTitle+'</p> <p class="image-description acumin-body">'+imageDescription+'</p> </div>');
+        $('#'+contentID).prepend('<div class="image-content"> <p class="image-tag acumin-body"> ''</p> <p class="image-description acumin-body">''</p> </div>');
         $('#'+contentID).prepend('<img class="image" src="'+imageLink+'" alt="">');
 
         $('#'+contentID).on('click', function(){
@@ -161,7 +161,7 @@ function getWriting() {
 
         $('.posts').append('<li class="text-block" id="'+contentID+'"></li>')
 
-        $('#'+contentID).append('<p class="post-list"><p class="post-title acumin-body">'+postTitle+'</p> <p class="post-description acumin-body">'+postDescription+'</p> <span class="post-content acumin-body">'+postContent+'</span></p>');
+        $('#'+contentID).append('<p class="post-list"><p class="post-title acumin-body">''</p> <p class="post-description acumin-body">''</p> <span class="post-content acumin-body">'+postContent+'</span></p>');
 
         $('#'+contentID).on('click', function(){
           $(this).toggleClass('show-post');
