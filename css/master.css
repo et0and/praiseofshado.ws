@@ -185,7 +185,7 @@ a:hover {
 }
 /* Image Gallery */
 .image-gallery {
-	text-align: right;
+	width: 100%;
 }
 .image-description {
 	display: none;
