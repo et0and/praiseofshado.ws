@@ -1,53 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="An experiment">
-  <meta name="keywords" content="performance, shadows, Tanizaki">
-  <meta name="author" content="Tom Hackshaw">
-
-  <meta property="og:title" content="Poetics of Spaces">
-  <meta property="og:description" content="An experiment">
-  <meta property="og:url" content="https://shadows.tom.so">
-
-  <meta name="twitter:title" content="Poetics of Space">
-  <meta name="twitter:description" content="An experiment">
-  <meta name="twitter:card" content="summary_large_image.jpg">
-  <meta name="twitter:image" content="summary_large_image.jpg">
-  <link rel="shortcut icon" href="favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="favicon.png" />
-
- <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="/css/master.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <title> Poetics of Space </title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+	<meta name="description" content="An experiment, powered by are.na">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="main.js"></script>
+	<meta property="og:image" content="/og.png">
+	<title>Atlas</title>
+  <style>
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    
+    #lightbox-img {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+    }
+  </style>
 </head>
-<body>
-
-  <div class="lightBox"></div>
-  <div class="whitebox"></div>
-
-  <div class="header-title acumin-title"></div>
-
-  <div class="header-menu">
-    <h1 class="acumin-title"><a class="submit" href="#">About</a></h1>
+<body class="bg-gray-100">
+	<nav class="bg-white/30 backdrop-blur-md fixed w-full top-0 left-0 z-10 p-4 shadow-md rounded-md">
+		<div class="container mx-auto flex justify-between items-center">
+			<h2 class="text-2xl font-medium">Poetics of Space</h2>
+			<div>
+			<a href="https://www.are.na/tom/poetics-of-space-gvdouhcpye0"><img src="logo.png" alt="Logo" class="h-7 w-auto mx-2"></a>
+			</div>
+		  </div>
+		</nav>
+	  
+	  <br><br><br>
+  <div class="min-h-screen container mx-auto p-4 flex items-center justify-center">
+	<div id="loading-message" class="text-center text-xl mb-4">Loading...</div>
+	<div id="entries" class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
+    </div>
   </div>
 
-  <div class="submit-container">
-    <p class="acumin-main">An online research archive dedicated to spaces, powered by are.na.</p>
-    <br>
-    <p class="acumin-main"><a href="https://www.are.na/tom-y/poetics-of-space-gvdouhcpye0">Channel</a></p>
-    <br>
+  <div id="lightbox" class="lightbox hidden" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="lightbox" />
   </div>
 
-  <div class="content-flex-container">
-    <div class="description-body">
-      <!--p class="acumin-body" id="description"></p-->
-    <div class="image-gallery">
-  </div>
-
-<script src="js/arena.js" charset="utf-8"></script>
+  <script src="main.js"></script>
 </body>
 </html>
+
